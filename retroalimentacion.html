@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETWORKS - Mensaje Enviado</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#3b82f6',secondary:'#64748b'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="icon" href="https://scontent.fuio16-1.fna.fbcdn.net/v/t39.30808-6/428644061_122100288812223484_9167197178839648454_n.png?_nc_cat=103&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=XNaX0QddnhMQ7kNvwE5-SqD&_nc_oc=AdkCxuvKbZ-cwSpmHz3bj64O_ozymy6GIw3egEW_3CDcStJQxh-gEblSLdZrbeBpZIGHKkxbmNA1zTui54vp9Xwc&_nc_zt=23&_nc_ht=scontent.fuio16-1.fna&_nc_gid=fxg6wD1dAwcrCtS-MnLagQ&oh=00_AfGBS5RRJyXP-4CsYvqwRnVRHNf53NUIcR4CNCxeU0fd2w&oe=67FCEB4A" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        /* Estilos para el menú móvil */
+        .mobile-menu {
+            transition: transform 0.3s ease-in-out;
+            transform: translateX(-100%);
+        }
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+        .menu-button span {
+            transition: all 0.3s ease-in-out;
+        }
+        .menu-button.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .menu-button.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .menu-button.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar (igual que en la página principal) -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-3xl font-['Pacifico'] text-primary">NETWORKS</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="font-medium text-gray-700 hover:text-primary transition">Inicio</a>
+                    <a href="nosotros.html" class="font-medium text-gray-700 hover:text-primary transition">Nosotros</a>
+                    <a href="servicios.html" class="font-medium text-gray-700 hover:text-primary transition">Servicios</a>
+                    <a href="contacto.html" class="font-medium text-primary border-b-2 border-primary">Contacto</a>
+                    <a href="productos.html" class="font-medium text-gray-700 hover:text-primary transition">Materiales</a>
+                </div>
+                <div class="flex items-center">
+                    <a href="https://wa.me/5930983113772?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios" target="_blank" class="hidden md:inline-flex items-center justify-center bg-green-500 text-white px-4 py-2 !rounded-button whitespace-nowrap hover:bg-green-600 transition">
+                        <div class="w-5 h-5 flex items-center justify-center mr-2">
+                            <i class="ri-whatsapp-line"></i>
+                        </div>
+                        Contáctanos
+                    </a>
+                    <button class="menu-button md:hidden w-10 h-10 flex flex-col items-center justify-center text-gray-700">
+                        <span class="block w-6 h-0.5 bg-gray-700 my-0.5"></span>
+                        <span class="block w-6 h-0.5 bg-gray-700 my-0.5"></span>
+                        <span class="block w-6 h-0.5 bg-gray-700 my-0.5"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Menú móvil (igual que en la página principal) -->
+        <div class="mobile-menu fixed top-0 left-0 h-full w-4/5 bg-white shadow-lg z-50 md:hidden pt-20 px-4">
+            <!-- Contenido del menú móvil igual que en contacto.html -->
+        </div>
+        <div class="mobile-menu-overlay fixed inset-0 bg-black opacity-50 z-40 hidden"></div>
+    </nav>
+
+    <!-- Mensaje de agradecimiento -->
+    <section class="pt-24 pb-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <div class="text-green-500 mb-6">
+                    <i class="ri-check-double-line text-7xl"></i>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">¡Mensaje enviado con éxito!</h1>
+                <div class="bg-green-100 text-green-700 p-6 rounded-lg max-w-3xl mx-auto mb-8">
+                    <p class="text-lg">Gracias por contactarnos. Hemos recibido tu mensaje correctamente y un asesor se pondrá en contacto contigo lo antes posible.</p>
+                    <p class="mt-4">Además, hemos enviado una confirmación a tu correo electrónico con información importante.</p>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row justify-center gap-4 mt-8">
+                    <a href="index.html" class="inline-flex items-center justify-center bg-primary text-white px-6 py-3 !rounded-button font-medium whitespace-nowrap hover:bg-blue-700 transition">
+                        <i class="ri-home-line mr-2"></i> Volver al inicio
+                    </a>
+                    <a href="https://wa.me/5930983113772?text=Hola,%20acabo%20de%20enviar%20un%20mensaje%20a%20través%20del%20formulario%20web" target="_blank" class="inline-flex items-center justify-center bg-green-500 text-white px-6 py-3 !rounded-button font-medium whitespace-nowrap hover:bg-green-600 transition">
+                        <i class="ri-whatsapp-line mr-2"></i> Contactar por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Otros servicios -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Nuestros Servicios</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Mientras esperas nuestra respuesta, te invitamos a conocer los servicios académicos que ofrecemos.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Servicio 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="bg-blue-100 text-primary p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="ri-book-open-line text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Resolución de Ejercicios</h3>
+                    <p class="text-gray-600">Soluciones detalladas y explicadas paso a paso para tus ejercicios académicos.</p>
+                    <a href="servicios.html" class="inline-block mt-4 text-primary font-medium hover:underline">Más información</a>
+                </div>
+                
+                <!-- Servicio 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="bg-blue-100 text-primary p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="ri-edit-line text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Redacción de Ensayos</h3>
+                    <p class="text-gray-600">Ensayos académicos de alta calidad adaptados a tus requerimientos específicos.</p>
+                    <a href="servicios.html" class="inline-block mt-4 text-primary font-medium hover:underline">Más información</a>
+                </div>
+                
+                <!-- Servicio 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="bg-blue-100 text-primary p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="ri-shield-check-line text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Asesoría Académica</h3>
+                    <p class="text-gray-600">Orientación personalizada para mejorar tu rendimiento y comprensión de temas complejos.</p>
+                    <a href="servicios.html" class="inline-block mt-4 text-primary font-medium hover:underline">Más información</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (igual que en la página principal) -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <!-- Contenido del footer igual que en contacto.html -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 NETWORKS. Todos los derechos reservados.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 text-sm hover:text-white transition">Términos y Condiciones</a>
+                        <a href="#" class="text-gray-400 text-sm hover:text-white transition">Política de Privacidad</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script para el menú móvil (igual que en la página principal) -->
+    <script>
+        // Funcionalidad del menú móvil
+        const menuButton = document.querySelector('.menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const closeMenu = document.querySelector('.close-menu');
+        const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+
+        if (menuButton && mobileMenu && mobileMenuOverlay) {
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.add('active');
+                menuButton.classList.add('active');
+                mobileMenuOverlay.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            });
+
+            function closeMenuMobile() {
+                mobileMenu.classList.remove('active');
+                menuButton.classList.remove('active');
+                mobileMenuOverlay.classList.add('hidden');
+                document.body.style.overflow = '';
+            }
+
+            if (closeMenu) {
+                closeMenu.addEventListener('click', closeMenuMobile);
+            }
+            mobileMenuOverlay.addEventListener('click', closeMenuMobile);
+        }
+    </script>
+</body>
+</html>
