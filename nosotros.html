@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETWORKS - Nosotros</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#3b82f6',secondary:'#64748b'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="icon" href="https://scontent.fuio16-1.fna.fbcdn.net/v/t39.30808-6/428644061_122100288812223484_9167197178839648454_n.png?_nc_cat=103&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=XNaX0QddnhMQ7kNvwE5-SqD&_nc_oc=AdkCxuvKbZ-cwSpmHz3bj64O_ozymy6GIw3egEW_3CDcStJQxh-gEblSLdZrbeBpZIGHKkxbmNA1zTui54vp9Xwc&_nc_zt=23&_nc_ht=scontent.fuio16-1.fna&_nc_gid=fxg6wD1dAwcrCtS-MnLagQ&oh=00_AfGBS5RRJyXP-4CsYvqwRnVRHNf53NUIcR4CNCxeU0fd2w&oe=67FCEB4A" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        /* Estilos para el menú móvil (mismo que en index.html) */
+        .mobile-menu {
+            transition: transform 0.3s ease-in-out;
+            transform: translateX(-100%);
+        }
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+        .menu-button span {
+            transition: all 0.3s ease-in-out;
+        }
+        .menu-button.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .menu-button.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .menu-button.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-3xl font-['Pacifico'] text-primary">NETWORKS</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="font-medium text-gray-700 hover:text-primary transition">Inicio</a>
+                    <a href="nosotros.html" class="font-medium text-primary border-b-2 border-primary">Nosotros</a>
+                    <a href="servicios.html" class="font-medium text-gray-700 hover:text-primary transition">Servicios</a>
+                    <a href="contacto.html" class="font-medium text-gray-700 hover:text-primary transition">Contacto</a>
+		    <a href="productos.html" class="font-medium text-gray-700 hover:text-primary transition">Materiales</a>
+                </div>
+                <div class="flex items-center">
+                    <a href="https://wa.me/5930983113772?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios" target="_blank" class="hidden md:inline-flex items-center justify-center bg-green-500 text-white px-4 py-2 !rounded-button whitespace-nowrap hover:bg-green-600 transition">
+                        <div class="w-5 h-5 flex items-center justify-center mr-2">
+                            <i class="ri-whatsapp-line"></i>
+                        </div>
+                        Contáctanos
+                    </a>
+                    <button class="menu-button md:hidden w-10 h-10 flex flex-col items-center justify-center text-gray-700">
+                        <span class="block w-6 h-0.5 bg-gray-700 my-0.5"></span>
+                        <span class="block w-6 h-0.5 bg-gray-700 my-0.5"></span>
+                        <span class="block w-6 h-0.5 bg-gray-700 my-0.5"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Menú móvil -->
+        <div class="mobile-menu fixed top-0 left-0 h-full w-4/5 bg-white shadow-lg z-50 md:hidden pt-20 px-4">
+            <button class="absolute top-4 right-4 close-menu w-8 h-8 flex items-center justify-center text-gray-700">
+                <i class="ri-close-line text-2xl"></i>
+            </button>
+            <div class="flex flex-col space-y-4">
+                <a href="index.html" class="font-medium text-gray-700 hover:text-primary hover:border-l-4 hover:border-primary pl-4 py-2 transition">Inicio</a>
+                <a href="nosotros.html" class="font-medium text-primary border-l-4 border-primary pl-4 py-2">Nosotros</a>
+                <a href="servicios.html" class="font-medium text-gray-700 hover:text-primary hover:border-l-4 hover:border-primary pl-4 py-2 transition">Servicios</a>
+                <a href="contacto.html" class="font-medium text-gray-700 hover:text-primary hover:border-l-4 hover:border-primary pl-4 py-2 transition">Contacto</a>
+		<a href="producto.html" class="font-medium text-gray-700 hover:text-primary hover:border-l-4 hover:border-primary pl-4 py-2 transition">Materiales</a>
+                <a href="https://wa.me/5930983113772?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios" target="_blank" class="mt-4 inline-flex items-center justify-center bg-green-500 text-white px-4 py-2 !rounded-button whitespace-nowrap">
+                    <div class="w-5 h-5 flex items-center justify-center mr-2">
+                        <i class="ri-whatsapp-line"></i>
+                    </div>
+                    Contáctanos
+                </a>
+            </div>
+        </div>
+        <div class="mobile-menu-overlay fixed inset-0 bg-black opacity-50 z-40 hidden"></div>
+    </nav>
+
+    <!-- Header -->
+    <section class="pt-24 pb-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Conoce a NETWORKS</h1>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto">Somos tu aliado académico comprometido con el éxito de los estudiantes, ofreciendo soluciones profesionales y personalizadas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nuestra Historia -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-12">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Nuestra Historia</h2>
+                    <p class="text-gray-700 mb-4">
+                        NETWORKS nació de la pasión por ayudar a estudiantes a alcanzar su máximo potencial académico. 
+                        Fundada por profesionales con amplia experiencia en diversas áreas académicas, nuestra empresa 
+                        busca brindar soluciones integrales y personalizadas.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Desde nuestros inicios, hemos trabajado incansablemente para convertir los desafíos académicos 
+                        en oportunidades de crecimiento y aprendizaje. Nos respalda un equipo de expertos altamente 
+                        calificados en múltiples disciplinas.
+                    </p>
+                    <p class="text-gray-700">
+                        Nuestro compromiso va más allá de resolver tareas: buscamos empoderar a los estudiantes, 
+                        ayudándoles a desarrollar habilidades y conocimientos que les serán útiles toda la vida.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://public.readdy.ai/ai/img_res/aaa6fc1a9b72a3d9071036cfb1680eb6.jpg" alt="Nuestra Historia" class="w-full rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nuestros Valores -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Nuestros Valores</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Los principios que guían cada una de nuestras acciones y servicios.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center transition hover:shadow-xl">
+                    <div class="text-primary text-4xl mb-4 flex justify-center">
+                        <i class="ri-brain-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Excelencia Académica</h3>
+                    <p class="text-gray-600">Nos comprometemos con la más alta calidad en cada servicio, garantizando resultados precisos y profesionales.</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center transition hover:shadow-xl">
+                    <div class="text-primary text-4xl mb-4 flex justify-center">
+                        <i class="ri-user-heart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Personalización</h3>
+                    <p class="text-gray-600">Cada estudiante es único. Adaptamos nuestros servicios a las necesidades individuales de cada cliente.</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center transition hover:shadow-xl">
+                    <div class="text-primary text-4xl mb-4 flex justify-center">
+                        <i class="ri-light-bulb-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Aprendizaje Integral</h3>
+                    <p class="text-gray-600">No solo resolvemos tareas, ayudamos a los estudiantes a comprender y desarrollar sus habilidades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipo -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Nuestro Equipo</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Profesionales altamente capacitados dedicados a tu éxito académico.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition hover:shadow-xl">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://public.readdy.ai/ai/img_res/38cedac0abf33fd65e47cde8ee1cebe3.jpg" alt="Miembro del equipo" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">María González</h3>
+                        <p class="text-primary mb-2">Directora Académica</p>
+                        <p class="text-gray-600">Especialista en matemáticas y ciencias con más de 10 años de experiencia docente.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition hover:shadow-xl">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://public.readdy.ai/ai/img_res/0d773983806d4dfad640c4be6bee5e30.jpg" alt="Miembro del equipo" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Carlos Ramírez</h3>
+                        <p class="text-primary mb-2">Coordinador de Proyectos</p>
+                        <p class="text-gray-600">Experto en gestión de proyectos académicos y metodologías de investigación.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition hover:shadow-xl">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://public.readdy.ai/ai/img_res/aaa6fc1a9b72a3d9071036cfb1680eb6.jpg" alt="Miembro del equipo" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Laura Sánchez</h3>
+                        <p class="text-primary mb-2">Especialista en Humanidades</p>
+                        <p class="text-gray-600">Profesional en redacción académica y análisis literario con amplia trayectoria.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- CTA Section -->
+    <section class="py-16 bg-primary">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-2/3 mb-8 md:mb-0 text-center md:text-left">
+                    <h2 class="text-3xl font-bold text-white mb-4">¿Necesitas ayuda con tus tareas académicas?</h2>
+                    <p class="text-white opacity-90">Nuestro equipo de expertos está listo para ayudarte a alcanzar el éxito académico que mereces.</p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/5930983113772?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios" target="_blank" class="inline-flex items-center justify-center bg-white text-primary px-6 py-3 !rounded-button font-medium whitespace-nowrap hover:bg-gray-100 transition">
+                        <div class="w-5 h-5 flex items-center justify-center mr-2">
+                            <i class="ri-whatsapp-line"></i>
+                        </div>
+                        Contáctanos ahora
+                    </a>
+                    <a href="contacto.html" class="inline-flex items-center justify-center bg-transparent border-2 border-white text-white px-6 py-3 !rounded-button font-medium whitespace-nowrap hover:bg-white hover:bg-opacity-10 transition">
+                        Más información
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <!-- Logo y descripción -->
+                <div>
+                    <a href="index.html" class="text-3xl font-['Pacifico'] text-white mb-4 inline-block">NETWORKS</a>
+                    <p class="text-gray-400 mb-6">Soluciones académicas profesionales para estudiantes de todos los niveles.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/profile.php?id=61556704531962" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@proyects.networks" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition">
+                            <i class="ri-tiktok-line"></i>
+			</a>
+                    </div>
+                </div>
+
+                <!-- Enlaces rápidos -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Enlaces Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Inicio</a></li>
+                        <li><a href="nosotros.html" class="text-gray-400 hover:text-white transition">Nosotros</a></li>
+                        <li><a href="servicios.html" class="text-gray-400 hover:text-white transition">Servicios</a></li>
+                        <li><a href="contacto.html" class="text-gray-400 hover:text-white transition">Contacto</a></li>
+			<li><a href="productos.html" class="text-gray-400 hover:text-white transition">Materiales</a></li>
+                        <li><a href="contacto.html#faq" class="text-gray-400 hover:text-white transition">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+
+                <!-- Servicios -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Nuestros Servicios</h3>
+                    <ul class="space-y-2">
+                        <li><a href="servicios.html" class="text-gray-400 hover:text-white transition">Resolución de Ejercicios</a></li>
+                        <li><a href="servicios.html" class="text-gray-400 hover:text-white transition">Redacción de Ensayos</a></li>
+                        <li><a href="servicios.html" class="text-gray-400 hover:text-white transition">Proyectos Académicos</a></li>
+                        <li><a href="servicios.html" class="text-gray-400 hover:text-white transition">Preparación de Exámenes</a></li>
+                        <li><a href="servicios.html" class="text-gray-400 hover:text-white transition">Asesoría Académica</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contacto -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contacto</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-1 mr-3">
+                                <i class="ri-whatsapp-line"></i>
+                            </div>
+                            <span class="text-gray-400">+593 0983113772</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-1 mr-3">
+                                <i class="ri-mail-line"></i>
+                            </div>
+                            <span class="text-gray-400">proyectsnetworks@gmail.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-1 mr-3">
+                                <i class="ri-time-line"></i>
+                            </div>
+                            <span class="text-gray-400">Lunes a Domingo: 8:00 - 22:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 NETWORKS. Todos los derechos reservados.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 text-sm hover:text-white transition">Términos y Condiciones</a>
+                        <a href="#" class="text-gray-400 text-sm hover:text-white transition">Política de Privacidad</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Flotante -->
+    <a href="https://wa.me/5930983113772?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 flex items-center justify-center rounded-full shadow-lg z-50 hover:bg-green-600 transition">
+        <i class="ri-whatsapp-line text-3xl"></i>
+    </a>
+
+    <!-- JavaScript para interactividad -->
+    <script>
+        // Funcionalidad del menú móvil
+        const menuButton = document.querySelector('.menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const closeMenu = document.querySelector('.close-menu');
+        const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+            menuButton.classList.add('active');
+            mobileMenuOverlay.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        });
+
+        function closeMenuMobile() {
+            mobileMenu.classList.remove('active');
+            menuButton.classList.remove('active');
+            mobileMenuOverlay.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        closeMenu.addEventListener('click', closeMenuMobile);
+        mobileMenuOverlay.addEventListener('click', closeMenuMobile);
+
+        // Scroll suave para los enlaces internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Cerrar menú móvil si está abierto
+                    if (mobileMenu.classList.contains('active')) {
+                        closeMenuMobile();
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
